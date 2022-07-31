@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+.inner {
+	width: 1100px;
+}
+
+.red-box {
+	width: 400px;
+	height: 400px;
+	background: #ff0000;
+	margin: 0 auto;
+}
+
+.red-box_color {
+	width: 300px;
+	height: 300px;
+	background: #ff0000;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+.blue-box {
+	width: 300px;
+	height: 300px;
+	background: #0008ff;
+	margin-right: 75px;
+}
+
+.green-box {
+	width: 300px;
+	height: 300px;
+	background: #22ff00;
+	margin-left: 75px;
+}
+
+.red-float {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: #ff0000;
+}
+
+.blue-float {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: #0008ff;
+}
+
+.float::after {
+	content: "";
+display: block;
+clear: both;
+}
+
+.flex-box {
+	display: flex;
+	justify-content: center;
+}
+
+.a-box {
+	width: 300px;
+	height: 300px;
+	background: #ff0000;
+	position: relative;
+}
+
+.a-box p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.b-box {
+	width: 300px;
+	height: 300px;
+	background: #0008ff;
+	position: relative;
+}
+
+.b-box p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.c-box {
+	width: 300px;
+	height: 300px;
+	background: #ff8400;
+	position: relative;
+}
+
+.c-box p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.green {
+	background: #00ff51;
+}
+
+.yellow {
+	background: #d4ff00;
+}
+
+.purple {
+	background: #ff00e1;
+}
+
+.flex-items {
+	display: flex;
+	justify-content: center;
+}
+
+.red-item {
+	width: 300px;
+	height: 300px;
+	background: #ff0000;
+}
+
+.blue-item {
+	width: 300px;
+	height: 300px;
+	background: #0008ff;
+	display: none;
+}
+
+.green-item {
+	width: 300px;
+	height: 300px;
+	background: #00ff51;
+}
+
+@media screen and (max-width: 960px) {
+	.red-box {
+			width: 200px;
+			height: 200px;
+	}
+
+	.red-box_color {
+			background: #007bff;
+	}
+
+	.blue-box {
+			margin-right: 25px;
+	}
+	
+	.green-box {
+			margin-left: 25px;
+	}
+
+	.red-float {
+			float: none;
+	}
+
+	.blue-float {
+			float: none;
+	}
+
+	.flex-box {
+			direction: rtl;
+	}
+
+	.green {
+			order: 1;
+	}
+
+	.yellow {
+			order: 2;
+	}
+
+	.red-item {
+			display: none;
+	}
+
+	.blue-item {
+			display: inline;
+	}
+}
